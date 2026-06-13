@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt — Siteklar | Website-Agentur Solothurn</title>
+  <meta name="description" content="Schreiben Sie uns oder rufen Sie an — wir melden uns innert 24 Stunden. Kostenloses Erstgespräch für Handwerker und KMU in der Region Solothurn und Aargau.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Siteklar</a>
+      <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="leistungen.html">Leistungen & Preise</a></li>
+        <li><a href="referenzen.html">Referenzen</a></li>
+        <li><a href="kontakt.html" class="nav-cta">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Kontakt</h1>
+      <p>Schreiben Sie uns — wir melden uns innert 24 Stunden.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- FORM -->
+        <div class="contact-form-wrap">
+          <h2>Schreiben Sie uns</h2>
+          <p style="color:var(--text-muted); margin-bottom:32px;">Das erste Gespräch ist kostenlos und unverbindlich. Wir freuen uns auf Ihre Anfrage.</p>
+
+          <!--
+            PLATZHALTER: Formspree-URL eintragen:
+            action="https://formspree.io/f/IHRE_FORM_ID" method="POST"
+            Dann den JavaScript-Handler in script.js entfernen (e.preventDefault() Zeile)
+          -->
+          <form id="contactForm" action="#" method="POST" novalidate>
+            <div class="form-group">
+              <label for="name">Ihr Name *</label>
+              <input type="text" id="name" name="name" placeholder="Max Muster" required>
+            </div>
+            <div class="form-group">
+              <label for="betrieb">Betrieb / Firma</label>
+              <input type="text" id="betrieb" name="betrieb" placeholder="Muster GmbH">
+            </div>
+            <div class="form-group">
+              <label for="telefon">Telefon *</label>
+              <input type="tel" id="telefon" name="telefon" placeholder="+41 79 XXX XX XX" required>
+            </div>
+            <div class="form-group">
+              <label for="email">E-Mail</label>
+              <input type="email" id="email" name="email" placeholder="info@meinbetrieb.ch">
+            </div>
+            <div class="form-group">
+              <label for="branche">Branche</label>
+              <select id="branche" name="branche">
+                <option value="">Bitte wählen…</option>
+                <option>Sanitär &amp; Heizung</option>
+                <option>Elektro</option>
+                <option>Maler &amp; Gipser</option>
+                <option>Schreiner</option>
+                <option>Hauswartung</option>
+                <option>Autogarage</option>
+                <option>Gartenbau</option>
+                <option>Reinigung</option>
+                <option>Anderes Handwerk</option>
+                <option>KMU / Dienstleistung</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="paket">Gewünschtes Paket</label>
+              <select id="paket" name="paket">
+                <option value="">Noch nicht sicher</option>
+                <option>Basic — CHF 890</option>
+                <option>Standard — CHF 1390</option>
+                <option>Premium — CHF 1890</option>
+                <option>Monats-Abo — CHF 29</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="nachricht">Ihre Nachricht</label>
+              <textarea id="nachricht" name="nachricht" placeholder="Was können wir für Sie tun? Kurze Beschreibung Ihres Betriebs, was Sie sich vorstellen…"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Anfrage senden</button>
+          </form>
+
+          <div class="form-success" id="formSuccess">
+            ✓ Vielen Dank! Wir haben Ihre Anfrage erhalten und melden uns innert 24 Stunden.
+          </div>
+
+          <p style="font-size:13px; color:var(--text-muted); margin-top:16px;">
+            Mit dem Absenden stimmen Sie unserer <a href="datenschutz.html">Datenschutzerklärung</a> zu.
+          </p>
+        </div>
+
+        <!-- CONTACT INFO -->
+        <div class="contact-info">
+          <h2>Oder kontaktieren Sie uns direkt</h2>
+
+          <!-- PLATZHALTER: WhatsApp-Nummer ersetzen -->
+          <a href="https://wa.me/41764750575?text=Hallo%20Siteklar%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Website." class="whatsapp-btn">
+            <span class="wa-icon">💬</span>
+            <span>Per WhatsApp schreiben<br><small style="font-weight:400; font-size:13px;">Oft die schnellste Antwort</small></span>
+          </a>
+
+          <div class="contact-method">
+            <div class="contact-method-icon">📞</div>
+            <div>
+              <h3>Telefon</h3>
+              <!-- PLATZHALTER: Telefonnummer ersetzen -->
+              <a href="tel:+41767278889">+41 76 727 88 89</a>
+              <p style="font-size:13px; margin-top:4px;">Mo–Fr 8–18 Uhr</p>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-method-icon">✉️</div>
+            <div>
+              <h3>E-Mail</h3>
+              <a href="mailto:hallo@siteklar.ch">hallo@siteklar.ch</a>
+              <p style="font-size:13px; margin-top:4px;">Antwort innert 24 Stunden</p>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-method-icon">📍</div>
+            <div>
+              <h3>Standort</h3>
+              <!-- PLATZHALTER: Adresse ersetzen -->
+              <p>[Strasse Nr], [PLZ] [Ort]<br>Kanton Solothurn</p>
+              <p style="font-size:13px; margin-top:4px;">Treffen persönlich, per Video oder WhatsApp</p>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-method-icon">🕐</div>
+            <div>
+              <h3>Erreichbarkeit</h3>
+              <p>Montag – Freitag: 8:00 – 18:00 Uhr<br>Samstag: 9:00 – 13:00 Uhr</p>
+            </div>
+          </div>
+
+          <!--
+            PLATZHALTER: Google Maps Embed einfügen
+            Hinweis: In Datenschutzerklärung erwähnt — nur mit Consent oder 2-Klick-Lösung einbinden!
+          -->
+          <div class="maps-placeholder">
+            <span style="font-size:28px">🗺️</span>
+            <span>Karte wird nach Einwilligung geladen<br><small>(Google Maps Embed hier einfügen)</small></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US QUICK -->
+  <section style="background:var(--accent); padding:64px 0;">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:24px;">
+        <div style="text-align:center; padding:20px;">
+          <div style="font-size:36px; margin-bottom:12px;">🤝</div>
+          <h3 style="margin-bottom:8px; font-size:17px;">Persönlich</h3>
+          <p style="font-size:14px; color:#555;">Sie sprechen immer direkt mit uns — kein Callcenter, keine Umwege.</p>
+        </div>
+        <div style="text-align:center; padding:20px;">
+          <div style="font-size:36px; margin-bottom:12px;">🕐</div>
+          <h3 style="margin-bottom:8px; font-size:17px;">Schnell</h3>
+          <p style="font-size:14px; color:#555;">Ihre Website ist in 7 Tagen live — garantiert.</p>
+        </div>
+        <div style="text-align:center; padding:20px;">
+          <div style="font-size:36px; margin-bottom:12px;">💰</div>
+          <h3 style="margin-bottom:8px; font-size:17px;">Fair</h3>
+          <p style="font-size:14px; color:#555;">Fixpreis von Anfang an. Bezahlung erst nach Ihrer Freigabe.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">Siteklar</a>
+          <p>Websites für Handwerker &amp; KMU<br>Region Solothurn / Aargau</p>
+        </div>
+        <div class="footer-col">
+          <h4>Kontakt</h4>
+          <a href="tel:+41767278889">📞 +41 76 727 88 89</a>
+          <a href="https://wa.me/41764750575">💬 WhatsApp</a>
+          <a href="mailto:hallo@siteklar.ch">✉️ hallo@siteklar.ch</a>
+        </div>
+        <div class="footer-col">
+          <h4>Rechtliches</h4>
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Siteklar &mdash; Region Solothurn / Aargau. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Nach oben scrollen">&#8679;</button>
+  <script src="script.js"></script>
+</body>
+</html>
